@@ -11,7 +11,7 @@ default_args = {
 dag = DAG('HTTP_REQUEST', default_args=default_args, schedule_interval='05 9 * * *')
 
 # Commands
-bash_command = "/home/flume/hdfs_test/HTTP_2_HDFS.sh "
+bash_command = "./curl-xpost.sh "
 
 # Tasks
 bash_task = BashOperator(
